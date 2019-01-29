@@ -2,7 +2,7 @@
   "name": "sms-counter",
   "version": "1.0.0",
   "description": "sms counter node app",
-  "main": "index.js",
+  "main": "counter.js",
   "scripts": {
     "test": "mocha"
   },
@@ -17,10 +17,13 @@
   "author": "Nixon Kosgei",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-mocha": "^5.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^5.2.0"
   }
 }

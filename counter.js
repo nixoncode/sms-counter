@@ -28,6 +28,9 @@ const multiMessageLength = {
 };
 
 function detectEncoding(text) {
+  if (typeof text === 'undefined') {
+    return UTF16;
+  }
   switch (false) {
     case text.match(gsm7bitRegExp) == null:
       return GSM_7BIT;
@@ -81,4 +84,8 @@ function count(text) {
 }
 
 
-module.exports = count;
+module.exports = {
+  detectEncoding,
+  countGsm7bitEx,
+  count,
+};
